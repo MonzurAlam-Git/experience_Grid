@@ -1,0 +1,82 @@
+html,
+body {
+  height: 100%;
+  /* background-color: black; */
+}
+
+/* setting height to 100%, we have to keep in mind that the parent element height is defined  */
+
+.container {
+  height: 100%;
+  background-color: black;
+  display: grid;
+  /* grid-template-columns: 700px 700px; */
+
+  /* it divide the total width area into 3 fraction and distribute it into 2,1  */
+
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 50px auto 50px;
+
+  /* IF we want to write grid-template-columns and grid-template-columns in a single line 
+  grid-template: (row/column); */
+  /* grid-template: 1fr 3fr/2fr 4fr; */
+
+  /* if repeat needed : repeat(num of repetation, size) */
+  /* grid-template-columns: repeat(3, 1fr); */
+
+  /* grid-row-gap: 5px;
+  grid-column-gap: 3px; */
+  grid-gap: 5px;
+}
+/* .container div {
+  margin: 5px;
+  height: 50px;
+} */
+
+.header {
+  /* grid-column-start: 1; */
+  /* grid-column-end: 5; */
+  grid-column: 1/-1;
+}
+.footer {
+  /* grid-column-start: 1; */
+  /* grid-column-end: 5; */
+  grid-column: 1/-1;
+  /* grid-column: 1 / span(5); */
+}
+
+.content {
+  grid-column: 2/-1;
+}
+
+.bg_1 {
+  background-color: #06d6a0;
+}
+
+.bg_2 {
+  background-color: #118ab2;
+}
+
+.bg_3 {
+  background-color: #ef476f;
+}
+
+.bg_4 {
+  background-color: #ffd166;
+}
+
+.bg_5 {
+  background-color: #118ab2;
+}
+
+.bg_6 {
+  background-color: #ffd166;
+}
+
+.bg_7 {
+  background-color: #ef476f;
+}
+
+.bg_8 {
+  background-color: #118ab2;
+}
