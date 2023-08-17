@@ -1,7 +1,6 @@
 ﻿# experience_Grid_Flex
 
-**Whenever, we do change in a conetent's grid area , we have to change its corresponding element to make it relevant
-**
+**Whenever, we do change in a conetent's grid area , we have to change its corresponding element to make it relevant**
 
 for example : 
 
