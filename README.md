@@ -80,8 +80,6 @@ grid-gap: 5px;
   /* margin: 10px; */
   object-fit: cover;
 }
-
-```
 object-fit: cover;
 ```
 
