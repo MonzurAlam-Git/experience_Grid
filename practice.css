@@ -5,56 +5,103 @@ body {
 
 .container {
   height: 100%;
-  background-color: black;
+  /* background-color: black; */
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  /* grid-template-rows: repeat(a,b) denotes a number of rows should be generated having size of b */
+  /* grid-template-rows: repeat(2, 1fr); */
+
+  /* grid-auto-rows handles the rows properties that is automatically generated  */
+  /* grid-auto-rows: 1fr; */
+
   /* grid-template-columns: repeat(2, 1fr); */
   /* grid-template-columns: 700px 700px;*/
-  grid-template-rows: 50px auto 50px;
+  /* grid-template-rows: 50px auto 50px;
   grid-template-areas:
     "a a a a a a a a a a a a"
     "b b c c c c c c c c d d"
-    "e e e e f f f g g g g g";
+    "e e e e f f f g g g g g"; */
+  grid-auto-flow: dense;
+
   grid-gap: 5px;
 }
 
+.container img {
+  height: 100%;
+  width: 100%;
+  /* margin: 10px; */
+  object-fit: cover;
+}
+
+.horizontal {
+  grid-column: auto / span 2;
+}
+
+.vertical {
+  grid-row: auto/span 2;
+}
+
+.big {
+  grid-column: auto/span 2;
+  grid-row: auto/span 2;
+}
 .element_1 {
-  grid-area: a;
+  /* grid-area: a; */
   background-color: blueviolet;
   /* grid-column-start: 2; */
   /* grid-column-end: 10; */
 }
 
 .element_2 {
-  grid-area: b;
+  /* grid-area: b; */
   background-color: blue;
   /* grid-column-start: 10; */
   /* grid-column-end: 13; */
 }
 
 .element_3 {
-  grid-area: c;
+  /* grid-area: c; */
   background-color: aquamarine;
   /* grid-column-start: 2; */
   /* grid-column-end: 12; */
 }
 .element_4 {
-  grid-area: d;
+  /* grid-area: d; */
   /* grid-row-start: 1; */
   /* grid-row-end: 4; */
   background-color: crimson;
 }
 .element_5 {
-  grid-area: e;
+  /* grid-area: e; */
   background-color: yellow;
 }
 .element_6 {
-  grid-area: f;
+  /* grid-area: f; */
   background-color: dodgerblue;
 }
 .element_7 {
-  grid-area: g;
+  /* grid-area: g; */
   background-color: springgreen;
   /* grid-column-start: 3; */
   /* grid-column-end: -1; */
+}
+.element_8 {
+  /* grid-area: f; */
+  background-color: tomato;
+}
+.element_9 {
+  /* grid-area: f; */
+  background-color: lawngreen;
+}
+.element_10 {
+  /* grid-area: f; */
+  background-color: darkslateblue;
+}
+.element_11 {
+  /* grid-area: f; */
+  background-color: sienna;
+}
+.element_12 {
+  /* grid-area: f; */
+  background-color: darkolivegreen;
 }

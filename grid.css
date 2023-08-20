@@ -14,8 +14,16 @@ body {
 
   /* it divide the total width area into 3 fraction and distribute it into 2,1  */
 
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 50px 100px 50px;
+  /* grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 50px 100px 50px; */
+
+  /* autoFit Properties -- automatically fit mentioned area, for example it will allocate the columns into 450px one by one as long as it gets 450px area free, if it don't get 450px it will keep the space blank unless i use minmax properties */
+
+  /* grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); */
+  /* grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); */
+  grid-template-rows: repeat(2, 90px);
+  grid-template-columns: repeat(5, 90px);
+  /* grid-template-rows: 50px 100px 50px; */
 
   /* IF we want to write grid-template-columns and grid-template-columns in a single line 
   grid-template: (row/column); */
@@ -24,17 +32,28 @@ body {
   /* if repeat needed : repeat(num of repetation, size) */
   /* grid-template-columns: repeat(3, 1fr); */
   /* grid-template-areas:
-    "m h h h h h h h h h h h"
+    "m h h h h h h h h h .  ."
     "m c c c c c c c c c c c"
     "m c c c c c c c c c c c"
     "m c c c c c c c c c c c"
     "m c c c c c c c c c c c"
-    "f f f f f f f f f f f f"; */
+    ". f f f f f f f f f f ."; */
 
   /* grid-row-gap: 5px;
   grid-column-gap: 3px; */
   grid-gap: 5px;
+
+  /* justify all elements- horizontally */
+  /* justify-content: center;
+  align-content: center; */
+
+  /* justify individual element */
+  /* justify-items: center; */
+
+  /* align means vertically */
+  /* align-items: center; */
 }
+
 /* .container div {
   margin: 5px;
   height: 50px;
@@ -80,6 +99,7 @@ body {
 
 .bg_5 {
   background-color: #118ab2;
+  /* justify-self: end; */
 }
 
 .bg_6 {
@@ -92,4 +112,10 @@ body {
 
 .bg_8 {
   background-color: #118ab2;
+}
+.bg_9 {
+  background-color: blueviolet;
+}
+.bg_10 {
+  background-color: #ef476f;
 }
