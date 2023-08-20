@@ -5,8 +5,8 @@
 display: grid;
 ```
 
-
 setting parent element as display grid denotes parent element is a grid container and all child element will be alocated as grid system
+
 
 grid-template-columns denotes the size and distribution of columns and rows under a grid
 for example if i set 
@@ -57,16 +57,14 @@ grid-row: auto/span 2
 
 ```
 grid-area: a;
-```
-
-   we uses this property , to hardcodedly arrange elements
-   
+```   
 ```
 grid-template-areas:
     "a a a a a a a a a a a a"
     "b b c c c c c c c c d d"
     "e e e e f f f g g g g g"; */
 ```
+   we uses this property , to hardcodedly arrange elements
 
 
 ```
