@@ -39,7 +39,9 @@ we use auto fit rpoperties , when we want to distribute the area auto, and minma
 ```
 grid-column: auto / span 2;
 ```
+
 same can be written as 
+
 ```
 grid-column: span 2;
 ```
@@ -63,6 +65,8 @@ grid-template-areas:
     "a a a a a a a a a a a a"
     "b b c c c c c c c c d d"
     "e e e e f f f g g g g g"; */
+```
+
 
 ```
 grid-gap: 5px;
