@@ -45,14 +45,13 @@ same can be written as
 
 ```
 grid-column: span 2;
+grid-row: auto/span 2
+
 ```
 
 the elloborated version of the upper code is grid-column-start: auto and grid-cxolumn-end:span 2
 it denotes where the column should be start and end, auto peorperties set the element automatically in the next column available 
 
-```
-grid-row: auto/span 2
-```
 
 
 ```
