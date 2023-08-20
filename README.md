@@ -1,7 +1,8 @@
 ﻿# experience_Grid_Flex
  
 ```
-display: grid;```
+display: grid;
+```
 
 
 setting parent element as display grid denotes parent element is a grid container and all child element will be alocated as grid system
