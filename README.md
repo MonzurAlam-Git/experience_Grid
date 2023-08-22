@@ -94,7 +94,9 @@ it automatically place the item into available area even if not maintaining the 
 
 # UNderstandingof FlexBox
 
-``` display : flex;```
+```
+display : flex;
+```
 This will set the child elements into a flex box 
 
 There are 2 axis in flex, Main Axis(horizontal order ->-->-->) and cross axis (vertical order)
@@ -108,3 +110,6 @@ flex-direction: row
 flex-direction:column
 ```
 here elements are arranged in Vertically
+
+
+
