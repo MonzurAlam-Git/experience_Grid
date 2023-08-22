@@ -99,14 +99,13 @@ display : flex;
 ```
 This will set the child elements into a flex box 
 
-## flexBox width and height are by default adjust the viewport's width and height, putting some styles may overflow the child elements oveer the width of viewport (Soln- BY putting wrap attribute may solve the problem. For Example : )
+## flexBox width by default adjust the viewport's width, putting some styles may overflow the child elements oveer the width of viewport (Soln- BY putting row wrap attribute solves this problem. For Example : )
 
 ```
 flex-flow: row wrap
-or
-flex-flow: column wrap
-```
 
+```
+*this problem are not shown in column order*
 
 There are 2 axis in flex, Main Axis(horizontal order ->-->-->) and cross axis (vertical order)
 
