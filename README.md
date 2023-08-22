@@ -1,4 +1,4 @@
-﻿# experience_Grid
+﻿# Understanding_Grid
 
  
 ```
@@ -92,3 +92,19 @@ grid-auto-flow: dense;
 it automatically place the item into available area even if not maintaining the order they are arranged into code
  
 
+# UNderstandingof FlexBox
+
+``` display : flex;```
+This will set the child elements into a flex box 
+
+There are 2 axis in flex, Main Axis(horizontal order ->-->-->) and cross axis (vertical order)
+
+By default , elements are arranged in horizontally i.e 
+```
+flex-direction: row
+```
+ are set
+```
+flex-direction:column
+```
+here elements are arranged in Vertically
