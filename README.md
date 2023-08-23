@@ -119,5 +119,5 @@ flex-direction:column
 ```
 here elements are arranged in Vertically
 
-
+**justify-content should be applied over child but written inside parent**
 
